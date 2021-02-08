@@ -10,6 +10,7 @@ import AboutUs from "../components/AboutUs";
 
 import "../fonts/fonts.css";
 import ProductInfo from "../components/ProductInfo";
+import { ContactUs } from "../components/ContactUs";
 
 const partSpacingVert = "96px";
 
@@ -43,6 +44,11 @@ const IndexPage = () => {
             `}
           />
           <ProductInfo
+            css={css`
+              margin: ${partSpacingVert} 0;
+            `}
+          />
+          <ContactUs
             css={css`
               margin: ${partSpacingVert} 0;
             `}
