@@ -9,6 +9,9 @@ import Landing from "../components/Landing";
 import AboutUs from "../components/AboutUs";
 
 import "../fonts/fonts.css";
+import ProductInfo from "../components/ProductInfo";
+
+const partSpacingVert = "96px";
 
 const IndexPage = () => {
   return (
@@ -31,12 +34,17 @@ const IndexPage = () => {
           />
           <Landing
             css={css`
-              margin: 64px 0;
+              margin: ${partSpacingVert} 0;
             `}
           />
           <AboutUs
             css={css`
-              margin: 64px 0;
+              margin: ${partSpacingVert} 0;
+            `}
+          />
+          <ProductInfo
+            css={css`
+              margin: ${partSpacingVert} 0;
             `}
           />
         </div>

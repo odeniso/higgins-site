@@ -2,11 +2,11 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
+import { colors, margins } from "../params";
 import { ParagraphTitle } from "./ParagraphTitle";
-import { margins } from "../params";
 import { TinyTitle } from "./TinyTitle";
 
-const AboutUs = ({ className = "" }: { className?: string }) => (
+const ProductInfo = ({ className = "" }: { className?: string }) => (
   <div
     css={css`
       display: flex;
@@ -22,29 +22,17 @@ const AboutUs = ({ className = "" }: { className?: string }) => (
     >
       <div
         css={css`
-          height: 100%;
-          max-width: 100%;
-          background: black;
+          margin-left: ${margins.side};
         `}
       >
-        HAI
-      </div>
-    </div>
-    <div
-      css={css`
-        flex: 1;
-      `}
-    >
-      <div>
-        <TinyTitle>WE LOVE DOGS</TinyTitle>
+        <TinyTitle>DOG FOOD</TinyTitle>
         <ParagraphTitle>
-          {"Something general about the brand & food"}
+          {"All your dog needs. All About the product"}
         </ParagraphTitle>
         <div
           css={css`
             font-family: "Cheltenham";
             font-size: 24px;
-            margin-right: ${margins.side};
           `}
         >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -65,7 +53,24 @@ const AboutUs = ({ className = "" }: { className?: string }) => (
         </div>
       </div>
     </div>
+    <div
+      css={css`
+        flex: 1;
+      `}
+    >
+      <div
+        css={css`
+          height: 100%;
+          max-width: 100%;
+          background: black;
+          margin-right: ${margins.side};
+          margin-left: 128px;
+        `}
+      >
+        HAI
+      </div>
+    </div>
   </div>
 );
 
-export default AboutUs;
+export default ProductInfo;

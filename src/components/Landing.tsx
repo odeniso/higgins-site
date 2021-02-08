@@ -2,10 +2,10 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import colors from "../colors";
+import { colors, margins } from "../params";
 import DogPic from "../images/dog2x.png";
 
-const margin = "160px";
+const margin = margins.side;
 
 const Landing = ({ className = "" }: { className?: string }) => (
   <div

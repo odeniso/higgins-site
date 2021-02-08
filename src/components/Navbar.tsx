@@ -2,7 +2,7 @@ import * as React from "react";
 import DogBadge from "../illustrations/DogBadge";
 import { css } from "@emotion/react";
 
-import colors from "../colors";
+import { colors } from "../params";
 
 const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   children,
