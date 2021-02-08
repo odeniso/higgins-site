@@ -7,13 +7,20 @@ import DogPic from "../images/dog2x.png";
 
 const margin = margins.side;
 
-const Landing = ({ className = "" }: { className?: string }) => (
+const Landing = ({
+  className = "",
+  id = "",
+}: {
+  className?: string;
+  id?: string;
+}) => (
   <div
     css={css`
       display: flex;
       column-gap: 24px;
     `}
     className={className}
+    id={id}
   >
     <div
       css={css`

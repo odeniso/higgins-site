@@ -2,11 +2,17 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { colors, margins } from "../params";
+import { margins } from "../params";
 import { ParagraphTitle } from "./ParagraphTitle";
 import { TinyTitle } from "./TinyTitle";
 
-const ProductInfo = ({ className = "" }: { className?: string }) => (
+const ProductInfo = ({
+  className = "",
+  id = "",
+}: {
+  className?: string;
+  id?: string;
+}) => (
   <div
     css={css`
       display: flex;
@@ -14,6 +20,7 @@ const ProductInfo = ({ className = "" }: { className?: string }) => (
       align-items: stretch;
     `}
     className={className}
+    id={id}
   >
     <div
       css={css`

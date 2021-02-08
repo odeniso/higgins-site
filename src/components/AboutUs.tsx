@@ -6,7 +6,13 @@ import { ParagraphTitle } from "./ParagraphTitle";
 import { margins } from "../params";
 import { TinyTitle } from "./TinyTitle";
 
-const AboutUs = ({ className = "" }: { className?: string }) => (
+const AboutUs = ({
+  className = "",
+  id = "",
+}: {
+  className?: string;
+  id?: string;
+}) => (
   <div
     css={css`
       display: flex;
@@ -14,6 +20,7 @@ const AboutUs = ({ className = "" }: { className?: string }) => (
       align-items: stretch;
     `}
     className={className}
+    id={id}
   >
     <div
       css={css`

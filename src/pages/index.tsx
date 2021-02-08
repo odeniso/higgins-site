@@ -2,6 +2,8 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
+import { mapValues } from "lodash";
+
 import Navbar from "../components/Navbar";
 
 import Layout from "../components/Layout";
@@ -13,6 +15,12 @@ import ProductInfo from "../components/ProductInfo";
 import { ContactUs } from "../components/ContactUs";
 
 const partSpacingVert = "96px";
+
+const anchorNameMap = {
+  about: "about",
+  product: "product",
+  contact: "contact",
+};
 
 const IndexPage = () => {
   return (
@@ -32,6 +40,7 @@ const IndexPage = () => {
             css={css`
               margin: 32px 0;
             `}
+            urlMap={mapValues(anchorNameMap, (anchorName) => `#${anchorName}`)}
           />
           <Landing
             css={css`
@@ -42,16 +51,19 @@ const IndexPage = () => {
             css={css`
               margin: ${partSpacingVert} 0;
             `}
+            id={anchorNameMap.about}
           />
           <ProductInfo
             css={css`
               margin: ${partSpacingVert} 0;
             `}
+            id={anchorNameMap.product}
           />
           <ContactUs
             css={css`
               margin: ${partSpacingVert} 0;
             `}
+            id={anchorNameMap.contact}
           />
         </div>
       </div>

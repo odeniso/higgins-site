@@ -24,7 +24,37 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   </div>
 );
 
-const Navbar = ({ className = "" }: { className?: string }) => (
+const LinkItem: React.FunctionComponent<{ href: string }> = ({
+  href,
+  children,
+}) => (
+  <div>
+    <a
+      css={css`
+        text-decoration: none;
+        color: #000;
+      `}
+      href={href}
+    >
+      {children}
+    </a>
+  </div>
+);
+
+type Url = string;
+interface UrlMap {
+  about: Url;
+  product: Url;
+  contact: Url;
+}
+
+const Navbar = ({
+  className = "",
+  urlMap,
+}: {
+  className?: string;
+  urlMap: UrlMap;
+}) => (
   <div
     css={css`
       display: flex;
@@ -32,8 +62,8 @@ const Navbar = ({ className = "" }: { className?: string }) => (
     className={className}
   >
     <ItemContainer alignLeft={false}>
-      <div>ÜBER UNS</div>
-      <div>HUNDEFUTTER</div>
+      <LinkItem href={urlMap.about}>ÜBER UNS</LinkItem>
+      <LinkItem href={urlMap.product}>HUNDEFUTTER</LinkItem>
     </ItemContainer>
     <DogBadge
       css={css`
@@ -43,7 +73,7 @@ const Navbar = ({ className = "" }: { className?: string }) => (
       color={colors.stromboli}
     />
     <ItemContainer>
-      <div>KONTAKT</div>
+      <LinkItem href={urlMap.contact}>KONTAKT</LinkItem>
     </ItemContainer>
   </div>
 );

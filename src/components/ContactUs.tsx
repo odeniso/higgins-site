@@ -4,7 +4,13 @@ import { colors } from "../params";
 
 import dogIllustration from "../illustrations/HigginsRound.svg";
 
-export const ContactUs = ({ className = "" }: { className?: string }) => (
+export const ContactUs = ({
+  className = "",
+  id = "",
+}: {
+  className?: string;
+  id?: string;
+}) => (
   <div
     css={css`
       display: flex;
@@ -18,6 +24,7 @@ export const ContactUs = ({ className = "" }: { className?: string }) => (
       align-items: center;
     `}
     className={className}
+    id={id}
   >
     <div
       css={css`
