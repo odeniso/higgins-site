@@ -24,12 +24,12 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   </div>
 );
 
-const Navbar = () => (
+const Navbar = ({ className = "" }: { className?: string }) => (
   <div
     css={css`
       display: flex;
-      padding: 32px 0;
     `}
+    className={className}
   >
     <ItemContainer alignLeft={false}>
       <div>ÜBER UNS</div>

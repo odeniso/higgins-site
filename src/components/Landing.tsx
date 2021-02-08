@@ -5,11 +5,15 @@ import { css } from "@emotion/react";
 import colors from "../colors";
 import DogPic from "../images/dog2x.png";
 
-const Landing = () => (
+const margin = "160px";
+
+const Landing = ({ className = "" }: { className?: string }) => (
   <div
     css={css`
       display: flex;
+      column-gap: 24px;
     `}
+    className={className}
   >
     <div
       css={css`
@@ -17,6 +21,8 @@ const Landing = () => (
         font-family: "Cheltenham";
         padding-top: 56px;
         color: ${colors.stromboli};
+        margin-left: ${margin};
+        justify-content: start;
       `}
     >
       <h1
@@ -39,6 +45,10 @@ const Landing = () => (
     <div
       css={css`
         flex: 1;
+        display: flex;
+        justify-content: end;
+        margin-right: ${margin};
+        align-items: center;
       `}
     >
       <img
