@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-emotion`,
-    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
