@@ -33,7 +33,7 @@ const Landing = () => (
           font-size: 36px;
         `}
       >
-        Get the best dogs food around right here
+        Get the best dog food around right here
       </div>
     </div>
     <div
