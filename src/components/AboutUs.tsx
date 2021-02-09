@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 import { ParagraphTitle } from "./ParagraphTitle";
 import { margins } from "../params";
 import { TinyTitle } from "./TinyTitle";
+import { mediaQs } from "../mediaQueries";
 
 const AboutUs = ({
   className = "",
@@ -17,7 +18,12 @@ const AboutUs = ({
     css={css`
       display: flex;
       column-gap: 24px;
-      align-items: stretch;
+      row-gap: 24px;
+      flex-direction: column-reverse;
+      ${mediaQs.isMinHuge} {
+        align-items: stretch;
+        flex-direction: row;
+      }
     `}
     className={className}
     id={id}
@@ -29,9 +35,12 @@ const AboutUs = ({
     >
       <div
         css={css`
-          height: 100%;
+          height: 266px;
           max-width: 100%;
           background: black;
+          ${mediaQs.isMinHuge} {
+            height: 100%;
+          }
         `}
       >
         HAI
@@ -40,6 +49,10 @@ const AboutUs = ({
     <div
       css={css`
         flex: 1;
+        margin: 0 ${margins.side};
+        ${mediaQs.isMinHuge} {
+          margin: 0;
+        }
       `}
     >
       <div>
@@ -50,8 +63,12 @@ const AboutUs = ({
         <div
           css={css`
             font-family: "Cheltenham";
-            font-size: 24px;
-            margin-right: ${margins.sideHuge};
+            font-size: 18px;
+            ${mediaQs.isMinHuge} {
+              font-size: 24px;
+              margin: 0;
+              margin-right: ${margins.sideHuge};
+            }
           `}
         >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

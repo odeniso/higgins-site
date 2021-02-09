@@ -1,5 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
+import { mediaQs } from "../mediaQueries";
 
 export const TinyTitle: React.FunctionComponent<{
   className?: string;
@@ -8,7 +9,10 @@ export const TinyTitle: React.FunctionComponent<{
     css={css`
       font-family: "Martha";
       font-size: 18px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
+      ${mediaQs.isMinHuge} {
+        margin-bottom: 16px;
+      }
     `}
     className={className}
   >
