@@ -42,7 +42,7 @@ const Landing = ({
           margin-left: ${marginHuge};
           color: ${colors.stromboli};
           flex: 1;
-          justify-content: start;
+          justify-content: flex-start;
         }
         font-family: "Cheltenham";
       `}
@@ -79,7 +79,7 @@ const Landing = ({
         display: flex;
         justify-content: center;
         ${mediaQs.isMinHuge} {
-          justify-content: end;
+          justify-content: flex-end;
           font-size: 36px;
           margin-right: ${marginHuge};
         }
