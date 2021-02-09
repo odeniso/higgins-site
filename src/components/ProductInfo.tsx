@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 import { margins } from "../params";
 import { ParagraphTitle } from "./ParagraphTitle";
 import { TinyTitle } from "./TinyTitle";
+import { mediaQs } from "../mediaQueries";
 
 const ProductInfo = ({
   className = "",
@@ -17,7 +18,11 @@ const ProductInfo = ({
     css={css`
       display: flex;
       column-gap: 24px;
-      align-items: stretch;
+      flex-direction: column;
+      ${mediaQs.isMinHuge} {
+        align-items: stretch;
+        flex-direction: row;
+      }
     `}
     className={className}
     id={id}
