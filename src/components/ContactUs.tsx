@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { colors } from "../params";
 
 import dogIllustration from "../illustrations/HigginsRound.svg";
+import { mediaQs } from "../mediaQueries";
 
 export const ContactUs = ({
   className = "",
@@ -13,15 +14,19 @@ export const ContactUs = ({
 }) => (
   <div
     css={css`
+      height: 200px;
       display: flex;
       background-color: ${colors.stromboli};
       background-image: url(${dogIllustration});
-      background-size: 60%;
+      background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;
-      height: 568px;
       justify-content: center;
       align-items: center;
+      ${mediaQs.isMinHuge} {
+        height: 568px;
+        background-size: 60%;
+      }
     `}
     className={className}
     id={id}
@@ -36,10 +41,13 @@ export const ContactUs = ({
     >
       <div
         css={css`
+          font-size: 32px;
           font-weight: 300;
-          font-size: 60px;
           margin-bottom: 17px;
           color: #fff;
+          ${mediaQs.isMinHuge} {
+            font-size: 60px;
+          }
         `}
       >
         Contact Us
@@ -47,9 +55,12 @@ export const ContactUs = ({
       <div>
         <a
           css={css`
-            font-size: 36px;
+            font-size: 16px;
             text-decoration: none;
             color: #fff;
+            ${mediaQs.isMinHuge} {
+              font-size: 36px;
+            }
           `}
           href="mailto:hallo@higginsfriends.com"
         >
