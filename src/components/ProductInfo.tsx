@@ -3,9 +3,8 @@ import * as React from "react";
 import { css } from "@emotion/react";
 
 import { margins } from "../params";
-import { ParagraphTitle } from "./ParagraphTitle";
-import { TinyTitle } from "./TinyTitle";
 import { mediaQs } from "../mediaQueries";
+import { TinyArticle } from "./TinyArticle";
 
 const ProductInfo = ({
   className = "",
@@ -37,15 +36,9 @@ const ProductInfo = ({
           margin-left: ${margins.sideHuge};
         `}
       >
-        <TinyTitle>DOG FOOD</TinyTitle>
-        <ParagraphTitle>
-          {"All your dog needs. All About the product"}
-        </ParagraphTitle>
-        <div
-          css={css`
-            font-family: "Cheltenham";
-            font-size: 24px;
-          `}
+        <TinyArticle
+          tinyTitle="DOG FOOD"
+          title={"All your dog needs. All About the product"}
         >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -62,7 +55,7 @@ const ProductInfo = ({
           kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
           amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
           diam nonumy eirmod tempor invidunt ut labore et dolore.
-        </div>
+        </TinyArticle>
       </div>
     </div>
     <div

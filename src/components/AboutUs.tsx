@@ -2,10 +2,9 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { ParagraphTitle } from "./ParagraphTitle";
 import { margins } from "../params";
-import { TinyTitle } from "./TinyTitle";
 import { mediaQs } from "../mediaQueries";
+import { TinyArticle } from "./TinyArticle";
 
 const AboutUs = ({
   className = "",
@@ -55,21 +54,16 @@ const AboutUs = ({
         }
       `}
     >
-      <div>
-        <TinyTitle>WE LOVE DOGS</TinyTitle>
-        <ParagraphTitle>
-          {"Something general about the brand & food"}
-        </ParagraphTitle>
-        <div
-          css={css`
-            font-family: "Cheltenham";
-            font-size: 18px;
-            ${mediaQs.isMinHuge} {
-              font-size: 24px;
-              margin: 0;
-              margin-right: ${margins.sideHuge};
-            }
-          `}
+      <div
+        css={css`
+          ${mediaQs.isMinHuge} {
+            margin-right: ${margins.sideHuge};
+          }
+        `}
+      >
+        <TinyArticle
+          tinyTitle="WE LOVE DOGS"
+          title={"Something general about the brand & food"}
         >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
@@ -86,7 +80,7 @@ const AboutUs = ({
           kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
           amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
           diam nonumy eirmod tempor invidunt ut labore et dolore.
-        </div>
+        </TinyArticle>
       </div>
     </div>
   </div>
