@@ -4,6 +4,7 @@ import { css } from "@emotion/react";
 
 import { colors, margins } from "../params";
 import DogPic from "../images/dog2x.png";
+import { mediaQs } from "../mediaQueries";
 
 const margin = margins.side;
 
@@ -17,33 +18,48 @@ const Landing = ({
   <div
     css={css`
       display: flex;
-      column-gap: 24px;
+      flex-direction: column;
+      ${mediaQs.isMinHuge} {
+        column-gap: 24px;
+        flex-direction: row;
+      }
     `}
     className={className}
     id={id}
   >
     <div
       css={css`
-        flex: 1;
+        display: flex;
+        justify-content: center;
+        ${mediaQs.isMinHuge} {
+          padding-top: 56px;
+          display: block;
+          margin-left: ${margin};
+          color: ${colors.stromboli};
+          flex: 1;
+          justify-content: start;
+        }
         font-family: "Cheltenham";
-        padding-top: 56px;
-        color: ${colors.stromboli};
-        margin-left: ${margin};
-        justify-content: start;
       `}
     >
       <h1
         css={css`
-          font-size: 140px;
+          ${mediaQs.isMinHuge} {
+            font-size: 140px;
+            margin-bottom: 48px;
+          }
           margin: 0;
-          margin-bottom: 48px;
         `}
       >
         All Natural Dog Food
       </h1>
       <div
         css={css`
-          font-size: 36px;
+          display: none;
+          ${mediaQs.isMinHuge} {
+            font-size: 36px;
+            display: block;
+          }
         `}
       >
         Get the best dog food around right here
@@ -53,15 +69,22 @@ const Landing = ({
       css={css`
         flex: 1;
         display: flex;
-        justify-content: end;
-        margin-right: ${margin};
         align-items: center;
+        ${mediaQs.isMinHuge} {
+          justify-content: end;
+          font-size: 36px;
+          margin-right: ${margin};
+        }
       `}
     >
       <img
         src={DogPic}
         css={css`
-          max-width: 100%;
+          max-width: 70%;
+          maring: auto;
+          ${mediaQs.isMinHuge} {
+            max-width: 100%;
+          }
         `}
       />
     </div>
