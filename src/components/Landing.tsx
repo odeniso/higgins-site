@@ -75,10 +75,10 @@ const Landing = ({
     </div>
     <div
       css={css`
-        flex: 1;
         display: flex;
         justify-content: center;
         ${mediaQs.isMinHuge} {
+          flex: 1;
           justify-content: flex-end;
           font-size: 36px;
           margin-right: ${marginHuge};
