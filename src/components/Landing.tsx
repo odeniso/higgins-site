@@ -89,6 +89,7 @@ const Landing = ({
         src={DogPic}
         css={css`
           max-width: 100%;
+          height: auto;
         `}
       />
     </div>
