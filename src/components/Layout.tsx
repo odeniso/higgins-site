@@ -7,6 +7,9 @@ const Layout: React.FunctionComponent = ({ children }) => (
       styles={css`
         html {
           background: #fff;
+          body {
+            margin: 0;
+          }
         }
       `}
     />
