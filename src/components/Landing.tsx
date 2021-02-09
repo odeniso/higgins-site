@@ -6,7 +6,7 @@ import { colors, margins } from "../params";
 import DogPic from "../images/dog2x.png";
 import { mediaQs } from "../mediaQueries";
 
-const margin = margins.side;
+const marginHuge = margins.sideHuge;
 
 const Landing = ({
   className = "",
@@ -19,7 +19,12 @@ const Landing = ({
     css={css`
       display: flex;
       flex-direction: column;
+      margin-left: ${margins.side};
+      margin-right: ${margins.side};
+      row-gap: 24px;
       ${mediaQs.isMinHuge} {
+        margin-left: 0;
+        margin-right: 0;
         column-gap: 24px;
         flex-direction: row;
       }
@@ -34,7 +39,7 @@ const Landing = ({
         ${mediaQs.isMinHuge} {
           padding-top: 56px;
           display: block;
-          margin-left: ${margin};
+          margin-left: ${marginHuge};
           color: ${colors.stromboli};
           flex: 1;
           justify-content: start;
@@ -44,9 +49,12 @@ const Landing = ({
     >
       <h1
         css={css`
+          font-size: 42px;
+          text-align: center;
           ${mediaQs.isMinHuge} {
             font-size: 140px;
             margin-bottom: 48px;
+            text-align: left;
           }
           margin: 0;
         `}
@@ -69,22 +77,18 @@ const Landing = ({
       css={css`
         flex: 1;
         display: flex;
-        align-items: center;
+        justify-content: center;
         ${mediaQs.isMinHuge} {
           justify-content: end;
           font-size: 36px;
-          margin-right: ${margin};
+          margin-right: ${marginHuge};
         }
       `}
     >
       <img
         src={DogPic}
         css={css`
-          max-width: 70%;
-          maring: auto;
-          ${mediaQs.isMinHuge} {
-            max-width: 100%;
-          }
+          max-width: 100%;
         `}
       />
     </div>

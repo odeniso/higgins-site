@@ -29,7 +29,7 @@ const ProductInfo = ({
     >
       <div
         css={css`
-          margin-left: ${margins.side};
+          margin-left: ${margins.sideHuge};
         `}
       >
         <TinyTitle>DOG FOOD</TinyTitle>
@@ -70,7 +70,7 @@ const ProductInfo = ({
           height: 100%;
           max-width: 100%;
           background: black;
-          margin-right: ${margins.side};
+          margin-right: ${margins.sideHuge};
           margin-left: 128px;
         `}
       >

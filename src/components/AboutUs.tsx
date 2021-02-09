@@ -51,7 +51,7 @@ const AboutUs = ({
           css={css`
             font-family: "Cheltenham";
             font-size: 24px;
-            margin-right: ${margins.side};
+            margin-right: ${margins.sideHuge};
           `}
         >
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
