@@ -17,7 +17,7 @@ const AboutUs = ({
     css={css`
       display: flex;
       column-gap: 24px;
-      row-gap: 24px;
+      row-gap: 40px;
       flex-direction: column-reverse;
       ${mediaQs.isMinHuge} {
         align-items: stretch;

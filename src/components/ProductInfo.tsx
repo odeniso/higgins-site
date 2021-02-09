@@ -17,6 +17,7 @@ const ProductInfo = ({
     css={css`
       display: flex;
       column-gap: 24px;
+      row-gap: 40px;
       flex-direction: column;
       ${mediaQs.isMinHuge} {
         align-items: stretch;
@@ -29,11 +30,17 @@ const ProductInfo = ({
     <div
       css={css`
         flex: 1;
+        margin: 0 ${margins.side};
+        ${mediaQs.isMinHuge} {
+          margin: 0;
+        }
       `}
     >
       <div
         css={css`
-          margin-left: ${margins.sideHuge};
+          ${mediaQs.isMinHuge} {
+            margin-left: ${margins.sideHuge};
+          }
         `}
       >
         <TinyArticle
@@ -65,11 +72,14 @@ const ProductInfo = ({
     >
       <div
         css={css`
-          height: 100%;
+          height: 201px;
           max-width: 100%;
           background: black;
-          margin-right: ${margins.sideHuge};
-          margin-left: 128px;
+          ${mediaQs.isMinHuge} {
+            margin-left: 128px;
+            margin-right: ${margins.sideHuge};
+            height: 100%;
+          }
         `}
       >
         HAI
