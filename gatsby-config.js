@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "Higgins & Friends",
+    url: "https://www.higginsfriends.com",
+    image: "/metadata-image.svg",
   },
   plugins: [
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
