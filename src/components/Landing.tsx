@@ -37,14 +37,13 @@ const Landing = ({
         margin-bottom: 24px;
         font-family: "Cheltenham";
         ${mediaQs.isMinHuge} {
-          padding-top: 56px;
+          padding-top: 5%;
           margin-bottom: 0;
           margin-right: 24px;
           display: block;
           margin-left: ${marginHuge};
           color: ${colors.stromboli};
           flex: 1;
-          justify-content: flex-start;
         }
       `}
     >
