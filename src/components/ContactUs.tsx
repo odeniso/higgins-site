@@ -23,6 +23,10 @@ export const ContactUs = ({
       background-repeat: no-repeat;
       justify-content: center;
       align-items: center;
+      ${mediaQs.isMinLarge} {
+        height: 400px;
+        background-size: 60%;
+      }
       ${mediaQs.isMinHuge} {
         height: 568px;
         background-size: 60%;
@@ -45,6 +49,9 @@ export const ContactUs = ({
           font-weight: 300;
           margin-bottom: 17px;
           color: #fff;
+          ${mediaQs.isMinLarge} {
+            font-size: 48px;
+          }
           ${mediaQs.isMinHuge} {
             font-size: 60px;
           }
@@ -58,6 +65,9 @@ export const ContactUs = ({
             font-size: 16px;
             text-decoration: none;
             color: #fff;
+            ${mediaQs.isMinLarge} {
+              font-size: 28px;
+            }
             ${mediaQs.isMinHuge} {
               font-size: 36px;
             }

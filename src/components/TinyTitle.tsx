@@ -10,7 +10,7 @@ export const TinyTitle: React.FunctionComponent<{
       font-family: "Martha";
       font-size: 18px;
       margin-bottom: 12px;
-      ${mediaQs.isMinHuge} {
+      ${mediaQs.isMinLarge} {
         margin-bottom: 16px;
       }
     `}

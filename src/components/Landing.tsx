@@ -21,7 +21,7 @@ const Landing = ({
       flex-direction: column;
       margin-left: ${margins.side};
       margin-right: ${margins.side};
-      ${mediaQs.isMinHuge} {
+      ${mediaQs.isMinLarge} {
         margin-left: 0;
         margin-right: 0;
         flex-direction: row;
@@ -36,14 +36,17 @@ const Landing = ({
         justify-content: center;
         margin-bottom: 24px;
         font-family: "Cheltenham";
-        ${mediaQs.isMinHuge} {
+        ${mediaQs.isMinLarge} {
           padding-top: 5%;
           margin-bottom: 0;
           margin-right: 24px;
           display: block;
-          margin-left: ${marginHuge};
+          margin-left: ${margins.sideLarge};
           color: ${colors.stromboli};
           flex: 1;
+        }
+        ${mediaQs.isMinHuge} {
+          margin-left: ${marginHuge};
         }
       `}
     >
@@ -51,10 +54,14 @@ const Landing = ({
         css={css`
           font-size: 42px;
           text-align: center;
-          ${mediaQs.isMinHuge} {
-            font-size: 140px;
-            margin-bottom: 48px;
+          ${mediaQs.isMinLarge} {
+            font-size: 92px;
+            margin-bottom: 40px;
             text-align: left;
+          }
+          ${mediaQs.isMinHuge} {
+            margin-bottom: 48px;
+            font-size: 140px;
           }
           margin: 0;
         `}
@@ -64,9 +71,12 @@ const Landing = ({
       <div
         css={css`
           display: none;
+          ${mediaQs.isMinLarge} {
+            font-size: 24px;
+            display: block;
+          }
           ${mediaQs.isMinHuge} {
             font-size: 36px;
-            display: block;
           }
         `}
       >
@@ -77,21 +87,25 @@ const Landing = ({
       css={css`
         display: flex;
         justify-content: center;
-        ${mediaQs.isMinHuge} {
+        align-items: center;
+        ${mediaQs.isMinLarge} {
           flex: 1;
           justify-content: flex-end;
-          font-size: 36px;
+          margin-right: ${margins.sideLarge};
+        }
+        ${mediaQs.isMinHuge} {
           margin-right: ${marginHuge};
         }
       `}
     >
-      <img
-        src={DogPic}
-        css={css`
-          width: 100%;
-          height: 100%;
-        `}
-      />
+      <div>
+        <img
+          src={DogPic}
+          css={css`
+            max-width: 100%;
+          `}
+        />
+      </div>
     </div>
   </div>
 );

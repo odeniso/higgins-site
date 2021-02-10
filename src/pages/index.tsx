@@ -16,6 +16,7 @@ import { mediaQs } from "../mediaQueries";
 import "../fonts/fonts.css";
 import { colors } from "../params";
 
+const partSpacingVertLarge = "48px";
 const partSpacingVertHuge = "96px";
 const partSpacingVert = "40px";
 
@@ -52,7 +53,10 @@ const NavBarContainer = () => (
     >
       <Navbar
         css={css`
-          margin: 32px 0;
+          margin: 24px 0;
+          ${mediaQs.isMinHuge} {
+            margin: 32px 0;
+          }
         `}
         urlMap={mapValues(anchorNameMap, (anchorName) => `#${anchorName}`)}
       />
@@ -64,6 +68,9 @@ const ContentRow: React.FunctionComponent = ({ children }) => (
   <div
     css={css`
       margin: ${partSpacingVert} 0;
+      ${mediaQs.isMinLarge} {
+        margin: ${partSpacingVertLarge} 0;
+      }
       ${mediaQs.isMinHuge} {
         margin: ${partSpacingVertHuge} 0;
       }

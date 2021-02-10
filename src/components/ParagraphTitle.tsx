@@ -15,7 +15,10 @@ export const ParagraphTitle: React.FunctionComponent<{
       color: ${colors.stromboli};
       ${mediaQs.isMinLarge} {
         font-size: 60px;
-        width: 600px;
+        max-width: 600px;
+        margin-bottom: 24px;
+      }
+      ${mediaQs.isMinHuge} {
         margin-bottom: 40px;
       }
     `}

@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { margins } from "../params";
+import { margins, gutters } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
@@ -17,7 +17,7 @@ const ProductInfo = ({
     css={css`
       display: flex;
       flex-direction: column;
-      ${mediaQs.isMinHuge} {
+      ${mediaQs.isMinLarge} {
         align-items: stretch;
         flex-direction: row;
       }
@@ -30,14 +30,17 @@ const ProductInfo = ({
         flex: 1;
         margin: 0 ${margins.side};
         margin-bottom: 40px;
-        ${mediaQs.isMinHuge} {
+        ${mediaQs.isMinLarge} {
           margin: 0;
-          margin-right: 24px;
+          margin-right: ${gutters.minLarge};
         }
       `}
     >
       <div
         css={css`
+          ${mediaQs.isMinLarge} {
+            margin-left: ${margins.sideLarge};
+          }
           ${mediaQs.isMinHuge} {
             margin-left: ${margins.sideHuge};
           }
@@ -75,10 +78,13 @@ const ProductInfo = ({
           height: 201px;
           max-width: 100%;
           background: black;
-          ${mediaQs.isMinHuge} {
+          ${mediaQs.isMinLarge} {
             margin-left: 128px;
-            margin-right: ${margins.sideHuge};
+            margin-right: ${margins.sideLarge};
             height: 100%;
+          }
+          ${mediaQs.isMinHuge} {
+            margin-right: ${margins.sideHuge};
           }
         `}
       >
