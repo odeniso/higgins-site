@@ -4,5 +4,5 @@ const getMediaQ = (minPixelWidth: number) =>
 export const mediaQs = {
   isMinSmall: getMediaQ(360),
   isMinLarge: getMediaQ(1024),
-  isMinHuge: getMediaQ(1800),
+  isMinHuge: getMediaQ(1700),
 };
