@@ -16,8 +16,6 @@ const ProductInfo = ({
   <div
     css={css`
       display: flex;
-      column-gap: 24px;
-      row-gap: 40px;
       flex-direction: column;
       ${mediaQs.isMinHuge} {
         align-items: stretch;
@@ -31,8 +29,10 @@ const ProductInfo = ({
       css={css`
         flex: 1;
         margin: 0 ${margins.side};
+        margin-bottom: 40px;
         ${mediaQs.isMinHuge} {
           margin: 0;
+          margin-right: 24px;
         }
       `}
     >

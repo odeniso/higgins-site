@@ -21,11 +21,9 @@ const Landing = ({
       flex-direction: column;
       margin-left: ${margins.side};
       margin-right: ${margins.side};
-      row-gap: 24px;
       ${mediaQs.isMinHuge} {
         margin-left: 0;
         margin-right: 0;
-        column-gap: 24px;
         flex-direction: row;
       }
     `}
@@ -36,15 +34,18 @@ const Landing = ({
       css={css`
         display: flex;
         justify-content: center;
+        margin-bottom: 24px;
+        font-family: "Cheltenham";
         ${mediaQs.isMinHuge} {
           padding-top: 56px;
+          margin-bottom: 0;
+          margin-right: 24px;
           display: block;
           margin-left: ${marginHuge};
           color: ${colors.stromboli};
           flex: 1;
           justify-content: flex-start;
         }
-        font-family: "Cheltenham";
       `}
     >
       <h1
@@ -88,8 +89,8 @@ const Landing = ({
       <img
         src={DogPic}
         css={css`
-          max-width: 100%;
-          height: auto;
+          width: 100%;
+          height: 100%;
         `}
       />
     </div>

@@ -10,7 +10,9 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
 }) => (
   <div
     css={css`
-      column-gap: 40px;
+      & > *:not(:last-child) {
+        margin-right: 40px;
+      }
       display: flex;
       font-family: "Martha";
       font-size: 18px;

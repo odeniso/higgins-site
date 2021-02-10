@@ -16,8 +16,6 @@ const AboutUs = ({
   <div
     css={css`
       display: flex;
-      column-gap: 24px;
-      row-gap: 40px;
       flex-direction: column-reverse;
       ${mediaQs.isMinHuge} {
         align-items: stretch;
@@ -30,6 +28,11 @@ const AboutUs = ({
     <div
       css={css`
         flex: 1;
+        margin-top: 40px;
+        ${mediaQs.isMinHuge} {
+          margin-top: 0;
+          margin-right: 24px;
+        }
       `}
     >
       <div
