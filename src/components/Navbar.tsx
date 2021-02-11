@@ -1,4 +1,7 @@
 import * as React from "react";
+
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import DogBadge from "../illustrations/DogBadge";
 import { css } from "@emotion/react";
 
@@ -31,15 +34,16 @@ const LinkItem: React.FunctionComponent<{ href: string }> = ({
   children,
 }) => (
   <div>
-    <a
+    <AnchorLink
       css={css`
         text-decoration: none;
         color: #000;
       `}
       href={href}
+      offset={100}
     >
       {children}
-    </a>
+    </AnchorLink>
   </div>
 );
 
