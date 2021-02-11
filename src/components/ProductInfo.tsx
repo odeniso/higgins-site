@@ -50,21 +50,9 @@ const ProductInfo = ({
           tinyTitle="DOG FOOD"
           title={"All your dog needs. All About the product"}
         >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore.
+          {
+            "Nur Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden, fern ab von Siegeln und Zertifikate. Die einzigartige Rezeptur versichert unseren Vierbeinern eine gute Verdauung und ein langes Leben. Während Riesenunternehmen sich auf Füllstoffe, künstliche Konservierungsstoffe und Geschmacksverstärker verlassen, setzen wir auf den Geschmack von echtem Fleisch anstatt Weizen und Mais."
+          }
         </TinyArticle>
       </div>
     </div>

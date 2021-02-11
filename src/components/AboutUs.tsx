@@ -73,21 +73,12 @@ const AboutUs = ({
           tinyTitle="WE LOVE DOGS"
           title={"Something general about the brand & food"}
         >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore.
+          Tiernahrung gibt es genügend. Aber wir machen es anders. Der Weg
+          unserer Kühe beginnt und endet auf der Weide. Wir ersparen ihnen und
+          dem Klima lange Touren durch Europa in fremde Schlachthäuser. Und
+          unser Wild lebt im Einklang mit der Natur im Wald anstatt im
+          Bio-Käfig. Alles sichergestellt durch die Zusammenarbeit mit
+          ausgewählten und gleichgesinnten Bauern und besserem Lohn.
         </TinyArticle>
       </div>
     </div>

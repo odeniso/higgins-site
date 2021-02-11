@@ -66,7 +66,7 @@ const Landing = ({
           margin: 0;
         `}
       >
-        All Natural Dog Food
+        So wie's sein soll
       </h1>
       <div
         css={css`
@@ -80,7 +80,7 @@ const Landing = ({
           }
         `}
       >
-        Get the best dog food around right here
+        Endlich wertvolles Hundefutter
       </div>
     </div>
     <div
