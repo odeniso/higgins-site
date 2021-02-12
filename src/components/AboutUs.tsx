@@ -7,6 +7,7 @@ import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
 import imagePic from "../images/cow-dogs.png";
+import { partSpacingVert } from "../pages";
 
 const gutterWidthLarge = gutters.minLarge;
 
@@ -32,7 +33,7 @@ const AboutUs = ({
     <div
       css={css`
         flex: 1;
-        margin-top: 40px;
+        margin-top: ${partSpacingVert};
         ${mediaQs.isMinLarge} {
           margin-top: 0;
           margin-right: ${gutterWidthLarge};

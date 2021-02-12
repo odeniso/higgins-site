@@ -7,6 +7,7 @@ import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
 import imagePic from "../images/great-dane-side.png";
+import { partSpacingVert } from "../pages";
 
 const ProductInfo = ({
   className = "",
@@ -31,7 +32,7 @@ const ProductInfo = ({
       css={css`
         flex: 1;
         margin: 0 ${margins.side};
-        margin-bottom: 40px;
+        margin-bottom: ${partSpacingVert};
         ${mediaQs.isMinLarge} {
           margin: 0;
           margin-right: ${gutters.minLarge};
