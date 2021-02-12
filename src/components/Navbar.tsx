@@ -2,7 +2,7 @@ import * as React from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import DogBadge from "../illustrations/DogBadge";
+import Icon from "../illustrations/higgins-typemark";
 import { css } from "@emotion/react";
 
 import { colors } from "../params";
@@ -71,12 +71,11 @@ const Navbar = ({
       <LinkItem href={urlMap.about}>ÜBER UNS</LinkItem>
       <LinkItem href={urlMap.product}>HUNDEFUTTER</LinkItem>
     </ItemContainer>
-    <DogBadge
+    <Icon
       css={css`
-        height: 130px;
+        height: 100px;
         margin: 0 80px;
       `}
-      color={colors.stromboli}
     />
     <ItemContainer>
       <LinkItem href={urlMap.contact}>KONTAKT</LinkItem>

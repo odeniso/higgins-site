@@ -6,6 +6,8 @@ import { margins, gutters } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
+import imagePic from "../images/cow-dogs.png";
+
 const gutterWidthLarge = gutters.minLarge;
 
 const AboutUs = ({
@@ -39,15 +41,18 @@ const AboutUs = ({
     >
       <div
         css={css`
-          height: 266px;
           max-width: 100%;
-          background: black;
           ${mediaQs.isMinLarge} {
             height: 100%;
           }
         `}
       >
-        HAI
+        <img
+          src={imagePic}
+          css={css`
+            max-width: 100%;
+          `}
+        />
       </div>
     </div>
     <div

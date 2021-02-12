@@ -6,6 +6,8 @@ import { margins, gutters } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
+import imagePic from "../images/great-dane-side.png";
+
 const ProductInfo = ({
   className = "",
   id = "",
@@ -63,9 +65,7 @@ const ProductInfo = ({
     >
       <div
         css={css`
-          height: 201px;
           max-width: 100%;
-          background: black;
           ${mediaQs.isMinLarge} {
             margin-left: 128px;
             margin-right: ${margins.sideLarge};
@@ -76,7 +76,12 @@ const ProductInfo = ({
           }
         `}
       >
-        HAI
+        <img
+          src={imagePic}
+          css={css`
+            max-width: 100%;
+          `}
+        />
       </div>
     </div>
   </div>
