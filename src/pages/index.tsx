@@ -9,7 +9,7 @@ import Landing from "../components/Landing";
 import AboutUs from "../components/AboutUs";
 import ProductInfo from "../components/ProductInfo";
 import { ContactUs } from "../components/ContactUs";
-import DogBadge from "../illustrations/DogBadge";
+import Typemark from "../illustrations/higgins-typemark";
 
 import { mediaQs } from "../mediaQueries";
 
@@ -30,15 +30,17 @@ const NavBarContainer = () => (
   <div>
     <div
       css={css`
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
         ${mediaQs.isMinLarge} {
           display: none;
         }
       `}
     >
-      <DogBadge
+      <Typemark
         css={css`
           height: 80px;
-          margin: 24px;
         `}
         color={colors.stromboli}
       />
