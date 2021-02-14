@@ -6,17 +6,8 @@ import { margins, gutters, theme, Theme } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
-import packaging from "../images/packaging";
+import { getPackagingImg } from "../images/packaging";
 import { partSpacingVert } from "../pages";
-
-const getImagePic = (): string => {
-  const mapping: Record<Theme, string> = {
-    [Theme.Gold]: packaging.mustardWhite,
-    [Theme.Green]: packaging.greenYellow,
-    [Theme.Red]: packaging.goldRed,
-  };
-  return mapping[theme.name] || packaging.greenYellow;
-};
 
 const ProductInfo = ({
   className = "",
@@ -78,9 +69,12 @@ const ProductInfo = ({
           max-width: 100%;
           display: flex;
           align-items: center;
+          justify-content: center;
+          padding: 0 30%;
           ${mediaQs.isMinLarge} {
             margin-right: ${margins.sideLarge};
             height: 100%;
+            padding: 0;
           }
           ${mediaQs.isMinHuge} {
             margin-right: ${margins.sideHuge};
@@ -88,7 +82,7 @@ const ProductInfo = ({
         `}
       >
         <img
-          src={getImagePic()}
+          src={getPackagingImg()}
           css={css`
             max-width: 100%;
           `}
