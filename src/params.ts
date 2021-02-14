@@ -5,30 +5,41 @@ const colors = {
   gimblet: "#C3A677",
   stromboli: "#37665D",
 };
-interface Theme {
+interface ThemeInfo {
   eyebrowTitleColor: string;
   primaryColor: string;
   headingColor: string;
+  name: Theme;
 }
 
-const themes: { [name: string]: Theme } = {
-  red: {
+export enum Theme {
+  Green = "GREEN",
+  Gold = "GOLD",
+  Red = "RED",
+}
+
+const themes: Record<Theme, ThemeInfo> = {
+  [Theme.Red]: {
     eyebrowTitleColor: colors.cardinal,
     primaryColor: colors.cardinal,
     headingColor: colors.gimblet,
+    name: Theme.Red,
   },
-  green: {
+  [Theme.Green]: {
     eyebrowTitleColor: colors.black,
     primaryColor: colors.stromboli,
     headingColor: colors.stromboli,
+    name: Theme.Green,
   },
-  gold: {
+  [Theme.Gold]: {
     eyebrowTitleColor: colors.black,
     primaryColor: colors.alpine,
     headingColor: colors.stromboli,
+    name: Theme.Gold,
   },
 };
-export const theme = themes.green;
+
+export const theme = themes[Theme.Green];
 
 export const margins = { side: "24px", sideLarge: "104px", sideHuge: "160px" };
 

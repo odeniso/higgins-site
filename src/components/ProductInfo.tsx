@@ -2,12 +2,21 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { margins, gutters } from "../params";
+import { margins, gutters, theme, Theme } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
-import imagePic from "../images/great-dane-side.png";
+import packaging from "../images/packaging";
 import { partSpacingVert } from "../pages";
+
+const getImagePic = (): string => {
+  const mapping: Record<Theme, string> = {
+    [Theme.Gold]: packaging.mustardWhite,
+    [Theme.Green]: packaging.greenYellow,
+    [Theme.Red]: packaging.goldRed,
+  };
+  return mapping[theme.name] || packaging.greenYellow;
+};
 
 const ProductInfo = ({
   className = "",
@@ -67,8 +76,9 @@ const ProductInfo = ({
       <div
         css={css`
           max-width: 100%;
+          display: flex;
+          align-items: center;
           ${mediaQs.isMinLarge} {
-            margin-left: 128px;
             margin-right: ${margins.sideLarge};
             height: 100%;
           }
@@ -78,7 +88,7 @@ const ProductInfo = ({
         `}
       >
         <img
-          src={imagePic}
+          src={getImagePic()}
           css={css`
             max-width: 100%;
           `}
