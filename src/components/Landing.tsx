@@ -3,8 +3,8 @@ import * as React from "react";
 import { css } from "@emotion/react";
 
 import { fonts, margins, theme } from "../params";
-import DogPic from "../images/dog2x.png";
 import { mediaQs } from "../mediaQueries";
+import { DogWithProduct } from "./DogWithProduct";
 
 const marginHuge = margins.sideHuge;
 
@@ -18,10 +18,9 @@ const Landing = ({
   <div
     css={css`
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       margin-left: ${margins.side};
-      margin-right: ${margins.side};
-      padding-bottom: 80px;
+      margin-right: 0;
       ${mediaQs.isMinLarge} {
         margin-left: 0;
         margin-right: 0;
@@ -60,9 +59,11 @@ const Landing = ({
           color: #000;
           font-family: ${fonts.sansSerifTitle};
           text-align: center;
+          max-width: 60%;
           font-size: 16px;
           ${mediaQs.isMinLarge} {
             color: ${theme.eyebrowTitleColor};
+            max-width: none;
             text-align: left;
             font-size: 24px;
           }
@@ -111,13 +112,12 @@ const Landing = ({
         }
       `}
     >
-      <div>
-        <img
-          src={DogPic}
-          css={css`
-            max-width: 100%;
-          `}
-        />
+      <div
+        css={css`
+          width: 100%;
+        `}
+      >
+        <DogWithProduct />
       </div>
     </div>
   </div>
