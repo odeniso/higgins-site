@@ -2,7 +2,7 @@ import * as React from "react";
 import { css } from "@emotion/react";
 import { theme } from "../params";
 
-import dogIllustration from "../illustrations/HigginsRound.svg";
+import dogIllustration from "../illustrations/dog-petting-badge-70.svg";
 import { mediaQs } from "../mediaQueries";
 
 export const ContactUs = ({

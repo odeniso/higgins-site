@@ -28,7 +28,7 @@ const themes: { [name: string]: Theme } = {
     headingColor: colors.stromboli,
   },
 };
-export const theme = themes.gold;
+export const theme = themes.green;
 
 export const margins = { side: "24px", sideLarge: "104px", sideHuge: "160px" };
 

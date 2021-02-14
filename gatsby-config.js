@@ -16,7 +16,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/dog-badge.png`,
+        icon: `static/metadata-image.svg`,
       },
     },
   ],
