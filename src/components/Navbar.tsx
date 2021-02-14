@@ -16,7 +16,7 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
         margin-right: 40px;
       }
       display: flex;
-      font-family: ${fonts.sansSerif};
+      font-family: ${fonts.sansSerifTitle};
       font-size: 18px;
       flex-basis: 0;
       flex-grow: 1;

@@ -11,7 +11,7 @@ const TinyTitle: React.FunctionComponent<{
   <div
     css={css`
       color: ${theme.eyebrowTitleColor};
-      font-family: ${fonts.sansSerif};
+      font-family: ${fonts.sansSerifTitle};
       font-size: 18px;
       margin-bottom: 12px;
       ${mediaQs.isMinLarge} {
@@ -58,7 +58,7 @@ export const TinyArticle: React.FunctionComponent<{
     <ParagraphTitle>{title}</ParagraphTitle>
     <div
       css={css`
-        font-family: ${fonts.serif};
+        font-family: ${fonts.sansSerif};
         font-size: 18px;
         ${mediaQs.isMinHuge} {
           font-size: 24px;

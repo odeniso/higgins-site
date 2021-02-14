@@ -41,7 +41,8 @@ const themes: Record<Theme, ThemeInfo> = {
 
 export const fonts = {
   serif: "Cheltenham",
-  sansSerif: "Martha",
+  sansSerif: "Apercu Pro",
+  sansSerifTitle: "Apercu Mono Pro",
 };
 
 export const theme = themes[Theme.Green];

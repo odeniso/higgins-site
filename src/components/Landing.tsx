@@ -58,7 +58,7 @@ const Landing = ({
       <div
         css={css`
           color: #000;
-          font-family: ${fonts.sansSerif};
+          font-family: ${fonts.sansSerifTitle};
           text-align: center;
           font-size: 16px;
           ${mediaQs.isMinLarge} {
