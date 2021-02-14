@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
-import { colors } from "../params";
+import { theme } from "../params";
 
 import dogIllustration from "../illustrations/HigginsRound.svg";
 import { mediaQs } from "../mediaQueries";
@@ -16,7 +16,7 @@ export const ContactUs = ({
     css={css`
       height: 200px;
       display: flex;
-      background-color: ${colors.stromboli};
+      background-color: ${theme.primaryColor};
       background-image: url(${dogIllustration});
       background-size: 80%;
       background-position: center;

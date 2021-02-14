@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { colors, margins } from "../params";
+import { margins, theme } from "../params";
 import DogPic from "../images/dog2x.png";
 import { mediaQs } from "../mediaQueries";
 
@@ -47,7 +47,7 @@ const Landing = ({
           margin-right: 24px;
           display: block;
           margin-left: ${margins.sideLarge};
-          color: ${colors.stromboli};
+          color: ${theme.headingColor};
           flex: 1;
         }
         ${mediaQs.isMinHuge} {
@@ -62,6 +62,7 @@ const Landing = ({
           text-align: center;
           font-size: 16px;
           ${mediaQs.isMinLarge} {
+            color: ${theme.eyebrowTitleColor};
             text-align: left;
             font-size: 24px;
           }

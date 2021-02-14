@@ -14,7 +14,7 @@ import Typemark from "../illustrations/higgins-typemark";
 import { mediaQs } from "../mediaQueries";
 
 import "../fonts/fonts.css";
-import { colors } from "../params";
+import { theme } from "../params";
 
 const partSpacingVertLarge = "96px";
 const partSpacingVertHuge = "144px";
@@ -42,7 +42,7 @@ const NavBarContainer = () => (
         css={css`
           height: 80px;
         `}
-        color={colors.stromboli}
+        color={theme.primaryColor}
       />
     </div>
     <div
