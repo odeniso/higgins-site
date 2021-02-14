@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import sittingDaneImg from "../images/sitting-dane.png";
 import { theme } from "../params";
 import { getPackagingImg } from "../images/packaging";
+import { mediaQs } from "../mediaQueries";
 
 const boxWidthPercent = 80;
 const foregroundOffsetPercent = 100 - boxWidthPercent - 10;
@@ -11,6 +12,12 @@ export const DogWithProduct = () => (
   <div
     css={css`
       height: 300px;
+      ${mediaQs.isMinLarge} {
+        height: 464px;
+      }
+      ${mediaQs.isMinHuge} {
+        height: 560px;
+      }
       position: relative;
       width: 100%;
     `}
@@ -22,6 +29,12 @@ export const DogWithProduct = () => (
         right: 0;
         background-color: ${theme.primaryColor};
         height: 192px;
+        ${mediaQs.isMinLarge} {
+          height: 312px;
+        }
+        ${mediaQs.isMinHuge} {
+          height: 384px;
+        }
         margin-bottom: 32px;
         width: ${boxWidthPercent}%;
         z-index: -1;
