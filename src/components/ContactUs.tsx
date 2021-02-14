@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
-import { theme } from "../params";
+import { fonts, theme } from "../params";
 
 import dogIllustration from "../illustrations/dog-petting-badge-70.svg";
 import { mediaQs } from "../mediaQueries";
@@ -38,7 +38,7 @@ export const ContactUs = ({
     <div
       css={css`
         display: flex;
-        font-family: "Cheltenham";
+        font-family: ${fonts.serif};
         align-items: center;
         flex-direction: column;
       `}

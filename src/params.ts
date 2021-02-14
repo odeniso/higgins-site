@@ -39,6 +39,11 @@ const themes: Record<Theme, ThemeInfo> = {
   },
 };
 
+export const fonts = {
+  serif: "Cheltenham",
+  sansSerif: "Martha",
+};
+
 export const theme = themes[Theme.Green];
 
 export const margins = { side: "24px", sideLarge: "104px", sideHuge: "160px" };

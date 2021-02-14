@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { margins, theme } from "../params";
+import { fonts, margins, theme } from "../params";
 import DogPic from "../images/dog2x.png";
 import { mediaQs } from "../mediaQueries";
 
@@ -38,7 +38,7 @@ const Landing = ({
         display: flex;
         justify-content: center;
         margin-bottom: 24px;
-        font-family: "Cheltenham";
+        font-family: ${fonts.serif};
         flex-direction: column;
         ${mediaQs.isMinLarge} {
           padding-top: 8%;
@@ -58,7 +58,7 @@ const Landing = ({
       <div
         css={css`
           color: #000;
-          font-family: "Martha";
+          font-family: ${fonts.sansSerif};
           text-align: center;
           font-size: 16px;
           ${mediaQs.isMinLarge} {

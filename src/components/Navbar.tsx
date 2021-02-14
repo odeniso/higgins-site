@@ -4,8 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Icon from "../illustrations/higgins-typemark";
 import { css } from "@emotion/react";
-
-import { colors } from "../params";
+import { fonts } from "../params";
 
 const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   children,
@@ -17,7 +16,7 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
         margin-right: 40px;
       }
       display: flex;
-      font-family: "Martha";
+      font-family: ${fonts.sansSerif};
       font-size: 18px;
       flex-basis: 0;
       flex-grow: 1;

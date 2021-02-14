@@ -3,7 +3,7 @@ import * as React from "react";
 import { css } from "@emotion/react";
 
 import { mediaQs } from "../mediaQueries";
-import { theme } from "../params";
+import { fonts, theme } from "../params";
 
 const TinyTitle: React.FunctionComponent<{
   className?: string;
@@ -11,7 +11,7 @@ const TinyTitle: React.FunctionComponent<{
   <div
     css={css`
       color: ${theme.eyebrowTitleColor};
-      font-family: "Martha";
+      font-family: ${fonts.sansSerif};
       font-size: 18px;
       margin-bottom: 12px;
       ${mediaQs.isMinLarge} {
@@ -29,7 +29,7 @@ const ParagraphTitle: React.FunctionComponent<{
 }> = ({ className = "", children }) => (
   <div
     css={css`
-      font-family: "Cheltenham";
+      font-family: ${fonts.serif};
       font-weight: 300;
       font-size: 36px;
       margin-bottom: 20px;
@@ -58,7 +58,7 @@ export const TinyArticle: React.FunctionComponent<{
     <ParagraphTitle>{title}</ParagraphTitle>
     <div
       css={css`
-        font-family: "Cheltenham";
+        font-family: ${fonts.serif};
         font-size: 18px;
         ${mediaQs.isMinHuge} {
           font-size: 24px;
