@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
-import { fonts, theme } from "../params";
+import { copy, fonts, theme } from "../params";
 
 import dogIllustration from "../illustrations/dog-petting-badge-70.svg";
 import { mediaQs } from "../mediaQueries";
@@ -57,7 +57,7 @@ export const ContactUs = ({
           }
         `}
       >
-        Contact Us
+        {copy.contactUs.header}
       </div>
       <div>
         <a

@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { margins, gutters } from "../params";
+import { margins, gutters, copy } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
@@ -75,16 +75,8 @@ const AboutUs = ({
           }
         `}
       >
-        <TinyArticle
-          tinyTitle="WE LOVE DOGS"
-          title={"Something general about the brand & food"}
-        >
-          Tiernahrung gibt es genügend. Aber wir machen es anders. Der Weg
-          unserer Kühe beginnt und endet auf der Weide. Wir ersparen ihnen und
-          dem Klima lange Touren durch Europa in fremde Schlachthäuser. Und
-          unser Wild lebt im Einklang mit der Natur im Wald anstatt im
-          Bio-Käfig. Alles sichergestellt durch die Zusammenarbeit mit
-          ausgewählten und gleichgesinnten Bauern und besserem Lohn.
+        <TinyArticle tinyTitle={copy.aboutUs.title} title={copy.aboutUs.header}>
+          {copy.aboutUs.content}
         </TinyArticle>
       </div>
     </div>

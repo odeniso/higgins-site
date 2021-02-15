@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { css } from "@emotion/react";
 
-import { margins, gutters, theme, Theme } from "../params";
+import { margins, gutters, copy } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
@@ -50,12 +50,10 @@ const ProductInfo = ({
         `}
       >
         <TinyArticle
-          tinyTitle="DOG FOOD"
-          title={"All your dog needs. All About the product"}
+          tinyTitle={copy.productInfo.title}
+          title={copy.productInfo.header}
         >
-          {
-            "Nur Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden, fern ab von Siegeln und Zertifikate. Die einzigartige Rezeptur versichert unseren Vierbeinern eine gute Verdauung und ein langes Leben. Während Riesenunternehmen sich auf Füllstoffe, künstliche Konservierungsstoffe und Geschmacksverstärker verlassen, setzen wir auf den Geschmack von echtem Fleisch anstatt Weizen und Mais."
-          }
+          {copy.productInfo.content}
         </TinyArticle>
       </div>
     </div>
