@@ -92,7 +92,7 @@ const IndexPage = () => {
         <ContentRow>
           <AboutUs id={anchorNameMap.about} />
         </ContentRow>
-        <BulletPoints />
+        {/* <BulletPoints /> */}
         <ContentRow>
           <ProductInfo id={anchorNameMap.product} />
         </ContentRow>
