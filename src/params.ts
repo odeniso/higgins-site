@@ -72,14 +72,14 @@ export const copy = {
   aboutUs: {
     title: "UNSERE PHILOSOPHIE",
     header: "Tierwohl statt Tierleid",
-    content: `Wir machen Tiernahrung anders. Das zeigt die Nahrungskette: Der Weg unserer Kühe beginnt und endet auf der Weide. Dadurch ersparen wir ihnen lange Touren in fremde Schlachthäuser. Während Wild in kontrollierten Gehegen gehalten werden muss, um einmal als Biofleisch auf dem Markt zu landen, gehen wir einen anderen Weg. Wir verarbeiten Fleisch von Wild, das durch die Jagd umgekommen ist und sein Leben im Wald verbracht hat. Beim Fisch bestehen wir auf MSC-Quellen. Durch die Zusammenarbeit mit ausgewählten und gleichgesinnten Bauern stellen wir eine artgerechte Haltung und Verarbeitung sicher - so wie’s sein soll.`,
+    content: `Wir machen Tiernahrung anders. Das zeigt die Nahrungskette: Der Weg unserer Kühe beginnt und endet auf der Weide. Dadurch ersparen wir ihnen lange Touren in fremde Schlachthäuser. Während Wild in kontrollierten Gehegen gehalten werden muss, um einmal als Biofleisch auf dem Markt zu landen, gehen wir einen anderen Weg. Wir verarbeiten Fleisch von Wild, das durch die Jagd umgekommen ist und sein Leben im Wald verbracht hat. Beim Fisch bestehen wir auf nachhaltingem Fang. Durch die Zusammenarbeit mit ausgewählten und gleichgesinnten Bauern stellen wir eine artgerechte Haltung und Verarbeitung sicher - so wie’s sein soll.`,
   },
   productInfo: {
     title: "UNSER FUTTER",
     header: "Natürlich ganz natürlich",
-    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere natürliche Rezeptur scheckt den Vierbeinern. Während Riesenunternehmen Kalorien aus Weizen generieren und Geschmack durch Chemie beimengen, werden bei unserem schonenden Kochverfahren die Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch und Gemüse. Eine perfekte Balance von Nahr- und Nährstoffen - so wie’s sein soll.`,
+    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere natürliche Rezeptur schmeckt den Vierbeinern. Während Riesenunternehmen Kalorien aus Weizen generieren und Geschmack durch Chemie beimengen, werden bei unserem schonenden Kochverfahren die Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch und Gemüse. Eine perfekte Balance von Nährstoffen - so wie’s sein soll.`,
   },
   contactUs: {
-    header: "Wir freuen uns auf Ihren Kontakt",
+    header: "Schreiben Sie uns eine Mail:",
   },
 };

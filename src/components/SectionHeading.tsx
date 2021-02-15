@@ -36,7 +36,7 @@ const ParagraphTitle: React.FunctionComponent<{
       color: ${theme.headingColor};
       ${mediaQs.isMinLarge} {
         font-size: 60px;
-        max-width: 600px;
+        max-width: 720px;
         margin-bottom: 24px;
       }
       ${mediaQs.isMinHuge} {
