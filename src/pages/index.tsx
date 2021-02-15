@@ -14,11 +14,8 @@ import Typemark from "../illustrations/higgins-typemark";
 import { mediaQs } from "../mediaQueries";
 
 import "../fonts/fonts.css";
-import { theme } from "../params";
-
-const partSpacingVertLarge = "96px";
-const partSpacingVertHuge = "144px";
-export const partSpacingVert = "48px";
+import { margins, theme } from "../params";
+import { BulletPoints } from "../components/BulletPoints";
 
 const anchorNameMap = {
   about: "about",
@@ -71,12 +68,12 @@ const ContentRow: React.FunctionComponent<{ className?: string }> = ({
 }) => (
   <div
     css={css`
-      margin-top: ${partSpacingVert};
+      margin-top: ${margins.vertical.small};
       ${mediaQs.isMinLarge} {
-        margin-top: ${partSpacingVertLarge};
+        margin-top: ${margins.vertical.large};
       }
       ${mediaQs.isMinHuge} {
-        margin-top: ${partSpacingVertHuge};
+        margin-top: ${margins.vertical.huge};
       }
     `}
   >
@@ -95,6 +92,7 @@ const IndexPage = () => {
         <ContentRow>
           <AboutUs id={anchorNameMap.about} />
         </ContentRow>
+        <BulletPoints />
         <ContentRow>
           <ProductInfo id={anchorNameMap.product} />
         </ContentRow>
