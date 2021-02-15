@@ -83,12 +83,12 @@ const Landing = ({
           css={css`
             font-size: 42px;
             text-align: center;
+            line-height: 1;
             margin: 0;
-            margin-top: 24px;
+            margin-top: 32px;
             ${mediaQs.isMinLarge} {
               font-size: 92px;
               margin-bottom: 40px;
-              margin-top: 0;
               text-align: left;
             }
             ${mediaQs.isMinHuge} {

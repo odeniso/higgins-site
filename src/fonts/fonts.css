@@ -234,13 +234,13 @@
 }
 
 @font-face {
-  font-family: "Cheltenham";
-  src: url("CheltenhamBT-BoldHeadline.eot");
-  src: url("CheltenhamBT-BoldHeadline.eot?#iefix") format("embedded-opentype"),
-    url("CheltenhamBT-BoldHeadline.woff2") format("woff2"),
-    url("CheltenhamBT-BoldHeadline.woff") format("woff"),
-    url("CheltenhamBT-BoldHeadline.ttf") format("truetype"),
-    url("CheltenhamBT-BoldHeadline.svg#CheltenhamBT-BoldHeadline") format("svg");
+  font-family: "ITC Cheltenham Std";
+  src: url("CheltenhamStd-Bold.eot");
+  src: url("CheltenhamStd-Bold.eot?#iefix") format("embedded-opentype"),
+    url("CheltenhamStd-Bold.woff2") format("woff2"),
+    url("CheltenhamStd-Bold.woff") format("woff"),
+    url("CheltenhamStd-Bold.ttf") format("truetype"),
+    url("CheltenhamStd-Bold.svg#CheltenhamStd-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
