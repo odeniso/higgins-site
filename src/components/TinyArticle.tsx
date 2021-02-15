@@ -17,8 +17,11 @@ export const TinyArticle: React.FunctionComponent<{
         font-family: ${fonts.sansSerif};
         font-size: 18px;
         font-weight: 300;
-        ${mediaQs.isMinHuge} {
+        ${mediaQs.isMinLarge} {
           font-size: 24px;
+        }
+        ${mediaQs.isMinHuge} {
+          font-size: 28px;
         }
       `}
     >
