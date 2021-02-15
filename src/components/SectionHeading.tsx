@@ -30,7 +30,7 @@ const ParagraphTitle: React.FunctionComponent<{
   <div
     css={css`
       font-family: ${fonts.serif};
-      font-weight: 300;
+      font-weight: 400;
       font-size: 36px;
       margin-bottom: 20px;
       color: ${theme.headingColor};
