@@ -53,14 +53,14 @@ export const gutters = { minLarge: "24px" };
 
 export const copy = {
   aboutUs: {
-    title: "ÜBER UNS",
-    header: "Im Einsatz für die Tiere",
-    content: `Tiernahrung gibt es genügend. Aber wir machen es anders. Der Weg unserer Kühe beginnt und endet auf der Weide. Wir ersparen ihnen lange Touren durch Europa in fremde Schlachthäuser. Unser Wild lebt im Einklang mit der Natur, im Wald anstatt im Bio-Käfig. Wir stellen artgerechte Haltung und Verarbeitung durch die Zusammenarbeit mit ausgewählten und gleichgesinnten Bauern sicher.`,
+    title: "UNSERE PHILOSOPHIE",
+    header: "Tierwohl statt Tierleid",
+    content: `Wir machen Tiernahrung anders. Das zeigt die Nahrungskette: Der Weg unserer Kühe beginnt und endet auf der Weide. Dadurch ersparen wir ihnen lange Touren in fremde Schlachthäuser. Während Wild in kontrollierten Gehegen gehalten werden muss, um einmal als Biofleisch auf dem Markt zu landen, gehen wir einen anderen Weg. Wir verarbeiten Fleisch von Wild, das durch die Jagd umgekommen ist und sein Leben im Wald verbracht hat. Beim Fisch bestehen wir auf MSC-Quellen. Durch die Zusammenarbeit mit ausgewählten und gleichgesinnten Bauern stellen wir eine artgerechte Haltung und Verarbeitung sicher - so wie’s sein soll.`,
   },
   productInfo: {
     title: "UNSER FUTTER",
-    header: "Das Beste für den Hund, hergestellt mit großer Verantwortung",
-    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere Rezeptur versichert unseren Vierbeinern eine artgerechte Ernährung. Während Riesenunternehmen sich auf Kalorien aus Weizen verlassen, setzen wir auf den vollen Geschmack von echtem Fleisch, Obst und Gemüse der durch ein schonendes Kochverfahren gewährleistet wird.`,
+    header: "Natürlich ganz natürlich",
+    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere natürliche Rezeptur scheckt den Vierbeinern. Während Riesenunternehmen Kalorien aus Weizen generieren und Geschmack durch Chemie beimengen, werden bei unserem schonenden Kochverfahren die Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch und Gemüse. Eine perfekte Balance von Nahr- und Nährstoffen - so wie’s sein soll.`,
   },
   contactUs: {
     header: "Wir freuen uns auf Ihren Kontakt",
