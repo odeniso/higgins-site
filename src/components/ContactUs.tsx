@@ -49,6 +49,7 @@ export const ContactUs = ({
           font-weight: 300;
           margin-bottom: 17px;
           color: #fff;
+          text-align: center;
           ${mediaQs.isMinLarge} {
             font-size: 48px;
           }
