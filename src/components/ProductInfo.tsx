@@ -7,7 +7,6 @@ import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
 import { getPackagingImg } from "../images/packaging";
-import { partSpacingVert } from "../pages";
 
 const ProductInfo = ({
   className = "",
@@ -32,7 +31,7 @@ const ProductInfo = ({
       css={css`
         flex: 1;
         margin: 0 ${margins.side};
-        margin-bottom: ${partSpacingVert};
+        margin-bottom: ${margins.vertical.small};
         ${mediaQs.isMinLarge} {
           margin: 0;
           margin-right: ${gutters.minLarge};
