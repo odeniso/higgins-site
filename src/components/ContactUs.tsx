@@ -1,6 +1,6 @@
 import * as React from "react";
 import { css } from "@emotion/react";
-import { copy, fonts, theme } from "../params";
+import { copy, fonts, margins, theme } from "../params";
 
 import dogIllustration from "../illustrations/dog-petting-badge-70.svg";
 import { mediaQs } from "../mediaQueries";
@@ -41,6 +41,7 @@ export const ContactUs = ({
         font-family: ${fonts.serif};
         align-items: center;
         flex-direction: column;
+        margin: 0 ${margins.side};
       `}
     >
       <div
