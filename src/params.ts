@@ -8,6 +8,7 @@ const colors = {
   gallery: "#EFEFEF",
   gimblet: "#C3A677",
   linen: "#FBF6EC",
+  porsche: "#E49D5B",
   stromboli: "#37665D",
   tan: "#CCAA7C",
   white: "#FFFFFF",
@@ -79,6 +80,7 @@ const themes: Record<Theme, ThemeInfo> = {
   [Theme.Linen]: {
     ...defaultTheme,
     background: colors.linen,
+    eyebrowTitleColor: colors.porsche,
     headingColor: colors.cabbagePont,
     logoColor: colors.everglade,
     name: Theme.Linen,
