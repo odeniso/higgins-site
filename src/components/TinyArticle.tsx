@@ -3,7 +3,7 @@ import * as React from "react";
 import { css } from "@emotion/react";
 
 import { mediaQs } from "../mediaQueries";
-import { fonts } from "../params";
+import { fonts, theme } from "../params";
 import { SectionHeading } from "./SectionHeading";
 
 export const TinyArticle: React.FunctionComponent<{
@@ -14,6 +14,7 @@ export const TinyArticle: React.FunctionComponent<{
     <SectionHeading title={tinyTitle} heading={title} />
     <div
       css={css`
+        color: ${theme.textColor};
         font-family: ${fonts.sansSerif};
         font-size: 18px;
         font-weight: 300;

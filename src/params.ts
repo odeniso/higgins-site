@@ -2,52 +2,88 @@ const colors = {
   alpine: "#B69A30",
   black: "#000",
   buttercup: "#F2BE19",
+  cabbagePont: "#414C3B",
   cardinal: "#D32427",
+  everglade: "#255135",
   gallery: "#EFEFEF",
   gimblet: "#C3A677",
+  linen: "#FBF6EC",
   stromboli: "#37665D",
   tan: "#CCAA7C",
   white: "#FFFFFF",
 };
 interface ThemeInfo {
+  background: string;
   eyebrowTitleColor: string;
   primaryColor: string;
   headingColor: string;
   secondaryBGColor: string;
   highlightColor: string;
+  logoColor: string;
   name: Theme;
+  textColor: string;
+  titleColor: string;
 }
 
 export enum Theme {
+  Linen = "LINEN",
   Green = "GREEN",
   Gold = "GOLD",
   Red = "RED",
 }
 
+const defaultTheme: ThemeInfo = {
+  background: colors.white,
+  eyebrowTitleColor: colors.black,
+  primaryColor: colors.stromboli,
+  headingColor: colors.stromboli,
+  secondaryBGColor: colors.gallery,
+  highlightColor: colors.tan,
+  logoColor: colors.black,
+  name: Theme.Green,
+  titleColor: colors.stromboli,
+  textColor: colors.black,
+};
+
 const themes: Record<Theme, ThemeInfo> = {
   [Theme.Red]: {
+    ...defaultTheme,
     eyebrowTitleColor: colors.cardinal,
     primaryColor: colors.cardinal,
     headingColor: colors.gimblet,
     secondaryBGColor: colors.cardinal,
     highlightColor: colors.gimblet,
     name: Theme.Red,
+    titleColor: colors.gimblet,
   },
   [Theme.Green]: {
+    ...defaultTheme,
     eyebrowTitleColor: colors.black,
     primaryColor: colors.stromboli,
     headingColor: colors.stromboli,
     secondaryBGColor: colors.gallery,
     highlightColor: colors.tan,
     name: Theme.Green,
+    titleColor: colors.stromboli,
   },
   [Theme.Gold]: {
+    ...defaultTheme,
     eyebrowTitleColor: colors.black,
     primaryColor: colors.alpine,
     headingColor: colors.stromboli,
     secondaryBGColor: colors.gallery,
     highlightColor: colors.white,
     name: Theme.Gold,
+    titleColor: colors.stromboli,
+  },
+  [Theme.Linen]: {
+    ...defaultTheme,
+    background: colors.linen,
+    headingColor: colors.cabbagePont,
+    logoColor: colors.everglade,
+    name: Theme.Linen,
+    titleColor: colors.everglade,
+    textColor: colors.cabbagePont,
   },
 };
 
@@ -57,7 +93,7 @@ export const fonts = {
   sansSerifTitle: "Apercu Mono Pro",
 };
 
-export const theme = themes[Theme.Green];
+export const theme = themes[Theme.Linen];
 
 export const margins = {
   side: "24px",

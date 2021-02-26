@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import Icon from "../illustrations/higgins-typemark";
 import { css } from "@emotion/react";
-import { copy, fonts } from "../params";
+import { copy, fonts, theme } from "../params";
 
 const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   children,
@@ -75,6 +75,7 @@ const Navbar = ({
         height: 100px;
         margin: 0 80px;
       `}
+      color={theme.logoColor}
     />
     <ItemContainer>
       <LinkItem href={urlMap.contact}>KONTAKT</LinkItem>

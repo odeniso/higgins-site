@@ -51,7 +51,7 @@ const Landing = ({
             margin-right: 24px;
             display: block;
             margin-left: ${margins.sideLarge};
-            color: ${theme.headingColor};
+            color: ${theme.titleColor};
             flex: 1;
           }
           ${mediaQs.isMinHuge} {
