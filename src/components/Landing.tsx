@@ -4,7 +4,7 @@ import { css } from "@emotion/react";
 
 import { fonts, margins, theme } from "../params";
 import { mediaQs } from "../mediaQueries";
-import { DogWithProduct } from "./DogWithProduct";
+import HigginsPainting from "../images/higgins-painting.png";
 
 const marginHuge = margins.sideHuge;
 
@@ -19,7 +19,6 @@ const Landing = ({
     css={css`
       display: flex;
       flex-direction: column;
-      margin-right: 0;
       ${mediaQs.isMinLarge} {
         margin-left: 0;
         flex-direction: row;
@@ -45,7 +44,7 @@ const Landing = ({
           font-family: ${fonts.serif};
           flex-direction: column;
           ${mediaQs.isMinLarge} {
-            padding-top: 8%;
+            padding-top: 15%;
             flex-direction: row;
             margin-bottom: 0;
             margin-right: 24px;
@@ -67,7 +66,7 @@ const Landing = ({
             max-width: 60%;
             font-size: 16px;
             ${mediaQs.isMinLarge} {
-              color: ${theme.eyebrowTitleColor};
+              color: #000;
               max-width: none;
               text-align: left;
               font-size: 24px;
@@ -117,9 +116,23 @@ const Landing = ({
       <div
         css={css`
           width: 100%;
+          margin-right: ${margins.side};
+          margin-left: ${margins.side};
+          ${mediaQs.isMinLarge} {
+            margin-left: 10%;
+            margin-right: ${margins.sideLarge};
+          }
+          ${mediaQs.isMinHuge} {
+            margin-right: ${margins.sideHuge};
+          }
         `}
       >
-        <DogWithProduct />
+        <img
+          src={HigginsPainting}
+          css={css`
+            max-width: 100%;
+          `}
+        />
       </div>
     </div>
   </div>
