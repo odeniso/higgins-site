@@ -115,7 +115,7 @@ export const copy = {
   productInfo: {
     title: "UNSER FUTTER",
     header: "Natürlich ganz natürlich",
-    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere natürliche Rezeptur schmeckt den Vierbeinern. Viele Hersteller generieren Kalorien aus Weizen und mengen Geschmack durch Chemie bei. Andere versprechen ihren Kunden „kein Weizen“, weichen dann aber auf Kichererbsen oder Mais aus. Wir verzichten auf unnötige Kalorien und Geschmackszusätze und machen keine falschen Versprechen. Higgins & Friends verwendet ausschließlich Buchweizenmehl, das für eine gute Verdauung sorgt. Und durch unser schonendes Kochverfahren bleiben Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch und Gemüse. Eine perfekte Balance von Nährstoffen - so wie’s sein soll.`,
+    content: `Higgins & Friends kombiniert regionale Zutaten mit fairen Methoden. Unsere natürliche Rezeptur schmeckt den Vierbeinern. Viele Hersteller generieren Kalorien aus Weizen und mengen Geschmack durch Chemie bei. Oder versprechen ihren Kunden „kein Weizen“, weichen dann aber auf Kichererbsen oder Mais aus. Wir verzichten auf unnötige Kalorien und Geschmackszusätze und machen keine falschen Versprechen. Higgins & Friends verwendet ausschließlich Buchweizenmehl, das für eine gute Verdauung sorgt. Und durch unser schonendes Kochverfahren bleiben Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch und Gemüse. Eine perfekte Balance von Nährstoffen - so wie’s sein soll.`,
   },
   contactUs: {
     header: "Schreiben Sie uns eine Mail:",
