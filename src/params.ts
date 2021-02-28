@@ -81,10 +81,11 @@ const themes: Record<Theme, ThemeInfo> = {
     ...defaultTheme,
     background: colors.linen,
     eyebrowTitleColor: colors.porsche,
+    primaryColor: colors.cabbagePont,
     headingColor: colors.cabbagePont,
-    logoColor: colors.everglade,
+    logoColor: colors.cabbagePont,
     name: Theme.Linen,
-    titleColor: colors.everglade,
+    titleColor: colors.cabbagePont,
     textColor: colors.cabbagePont,
   },
 };
