@@ -82,6 +82,9 @@ const ProductInfo = ({
           src={getPackagingImg()}
           css={css`
             max-width: 100%;
+            ${mediaQs.isMinLarge} {
+              height: 800px;
+            }
           `}
         />
       </div>
