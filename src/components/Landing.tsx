@@ -60,13 +60,12 @@ const Landing = ({
       >
         <div
           css={css`
-            color: #000;
-            font-family: ${fonts.sansSerifTitle};
+            color: ${theme.titleColor};
+            font-family: ${fonts.serif};
             text-align: center;
             max-width: 60%;
             font-size: 16px;
             ${mediaQs.isMinLarge} {
-              color: #000;
               max-width: none;
               text-align: left;
               font-size: 24px;
@@ -81,6 +80,8 @@ const Landing = ({
         <h1
           css={css`
             font-size: 42px;
+            color: ${theme.titleColor};
+            font-family: ${fonts.serif};
             text-align: center;
             line-height: 1;
             margin: 0;

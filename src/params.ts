@@ -12,6 +12,8 @@ const colors = {
   stromboli: "#37665D",
   tan: "#CCAA7C",
   white: "#FFFFFF",
+  fernFrond: "#586825",
+  hokeyPokey: "#D3AC28",
 };
 interface ThemeInfo {
   background: string;
@@ -31,6 +33,7 @@ export enum Theme {
   Green = "GREEN",
   Gold = "GOLD",
   Red = "RED",
+  Conda = "CONDA",
 }
 
 const defaultTheme: ThemeInfo = {
@@ -88,15 +91,26 @@ const themes: Record<Theme, ThemeInfo> = {
     titleColor: colors.cabbagePont,
     textColor: colors.cabbagePont,
   },
+  [Theme.Conda]: {
+    ...defaultTheme,
+    background: colors.fernFrond,
+    eyebrowTitleColor: colors.linen,
+    primaryColor: colors.hokeyPokey,
+    headingColor: colors.hokeyPokey,
+    logoColor: colors.hokeyPokey,
+    name: Theme.Conda,
+    titleColor: colors.hokeyPokey,
+    textColor: colors.hokeyPokey,
+  },
 };
 
 export const fonts = {
-  serif: "Cheltenham",
-  sansSerif: "Apercu Pro",
-  sansSerifTitle: "Apercu Mono Pro",
+  serif: "Desdemona",
+  sansSerif: "Myriad Pro",
+  sansSerifTitle: "Myriad Pro",
 };
 
-export const theme = themes[Theme.Linen];
+export const theme = themes[Theme.Conda];
 
 export const margins = {
   side: "24px",

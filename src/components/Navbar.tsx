@@ -2,9 +2,10 @@ import * as React from "react";
 
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import Icon from "../illustrations/higgins-typemark";
 import { css } from "@emotion/react";
 import { copy, fonts, theme } from "../params";
+
+import typemark from "../images/dogsPoem-typemark.png";
 
 const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   children,
@@ -16,7 +17,7 @@ const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
         margin-right: 40px;
       }
       display: flex;
-      font-family: ${fonts.sansSerifTitle};
+      font-family: ${fonts.serif};
       font-size: 18px;
       flex-basis: 0;
       flex-grow: 1;
@@ -36,7 +37,7 @@ const LinkItem: React.FunctionComponent<{ href: string }> = ({
     <AnchorLink
       css={css`
         text-decoration: none;
-        color: #000;
+        color: ${theme.eyebrowTitleColor};
       `}
       href={href}
       offset={100}
@@ -70,12 +71,12 @@ const Navbar = ({
       <LinkItem href={urlMap.about}>{copy.aboutUs.title}</LinkItem>
       <LinkItem href={urlMap.product}>{copy.productInfo.title}</LinkItem>
     </ItemContainer>
-    <Icon
+    <img
+      src={typemark}
       css={css`
-        height: 100px;
+        height: 150px;
         margin: 0 80px;
       `}
-      color={theme.logoColor}
     />
     <ItemContainer>
       <LinkItem href={urlMap.contact}>KONTAKT</LinkItem>

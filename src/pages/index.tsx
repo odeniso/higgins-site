@@ -9,7 +9,7 @@ import Landing from "../components/Landing";
 import AboutUs from "../components/AboutUs";
 import ProductInfo from "../components/ProductInfo";
 import { ContactUs } from "../components/ContactUs";
-import Typemark from "../illustrations/higgins-typemark";
+import typemark from "../images/dogsPoem-typemark.png";
 
 import { mediaQs } from "../mediaQueries";
 
@@ -35,11 +35,11 @@ const NavBarContainer = () => (
         }
       `}
     >
-      <Typemark
+      <img
+        src={typemark}
         css={css`
           height: 80px;
         `}
-        color={theme.primaryColor}
       />
     </div>
     <div

@@ -83,7 +83,7 @@ const ProductInfo = ({
           css={css`
             max-width: 100%;
             ${mediaQs.isMinLarge} {
-              height: 800px;
+              height: 500px;
             }
           `}
         />

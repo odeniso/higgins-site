@@ -11,7 +11,7 @@ const TinyTitle: React.FunctionComponent<{
   <div
     css={css`
       color: ${theme.eyebrowTitleColor};
-      font-family: ${fonts.sansSerifTitle};
+      font-family: ${fonts.serif};
       font-size: 18px;
       margin-bottom: 12px;
       ${mediaQs.isMinLarge} {

@@ -16,13 +16,13 @@ export const TinyArticle: React.FunctionComponent<{
       css={css`
         color: ${theme.textColor};
         font-family: ${fonts.sansSerif};
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
         ${mediaQs.isMinLarge} {
-          font-size: 24px;
+          font-size: 20px;
         }
         ${mediaQs.isMinHuge} {
-          font-size: 28px;
+          font-size: 24px;
         }
       `}
     >
