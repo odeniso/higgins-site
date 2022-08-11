@@ -39,9 +39,27 @@ export const ContactUs = ({
         font-family: ${fonts.serif};
         align-items: center;
         flex-direction: column;
+        color: #fff;
         margin: 0 ${margins.side};
       `}
     >
+      <div
+        css={css`
+          font-size: 24px;
+          font-weight: 300;
+          margin-bottom: 32px;
+          color: #fff;
+          text-align: center;
+          ${mediaQs.isMinLarge} {
+            font-size: 32px;
+          }
+          ${mediaQs.isMinHuge} {
+            font-size: 40px;
+          }
+        `}
+      >
+        {copy.contactUs.lead}
+      </div>
       <div
         css={css`
           font-size: 32px;

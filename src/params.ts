@@ -133,6 +133,7 @@ export const copy = {
     content: `Higgins & Friends kombiniert regionale, bio zertifizierte Zutaten mit fairen Methoden. Unsere natürliche Rezeptur schmeckt den Vierbeinern. Viele Hersteller generieren Kalorien aus Weizen und mengen Geschmack durch Chemie bei. Oder versprechen ihren Kunden „kein Weizen“, weichen dann aber auf Hülsenfrüchte aus, die für den Hundedarm nicht optimal sind. Wir verzichten auf unnötige Kalorien und Geschmackszusätze, und machen keine falschen Versprechen. Higgins & Friends verwendet ausschließlich Buchweizenmehl und Erdmandelmehl, die nährstoffreich für eine gute Verdauung sorgen. Und durch unser schonendes Kochverfahren bleiben Vitamine und Mineralstoffe erhalten. Das garantiert auch den vollen Geschmack von echtem Fleisch, Fisch, Gemüse, Obst und Kräuter. Eine perfekte Balance von Nährstoffen - so wie’s sein soll.`,
   },
   contactUs: {
+    lead: "Im Herbst starten wir eine Crowdinvesting-Kampagne, folge uns jetzt und bleibe informiert.",
     header: "Schreiben Sie uns eine Mail:",
   },
 };
