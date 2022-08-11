@@ -2,7 +2,6 @@ import * as React from "react";
 import { css } from "@emotion/react";
 import { copy, fonts, margins, theme } from "../params";
 
-import dogIllustration from "../illustrations/dog-petting-badge-70.svg";
 import { mediaQs } from "../mediaQueries";
 
 export const ContactUs = ({
@@ -17,7 +16,6 @@ export const ContactUs = ({
       height: 200px;
       display: flex;
       background-color: ${theme.primaryColor};
-      background-image: url(${dogIllustration});
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;

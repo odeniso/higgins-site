@@ -9,13 +9,13 @@ import Landing from "../components/Landing";
 import AboutUs from "../components/AboutUs";
 import ProductInfo from "../components/ProductInfo";
 import { ContactUs } from "../components/ContactUs";
-import typemark from "../images/dogsPoem-typemark.png";
 
 import { mediaQs } from "../mediaQueries";
 
 import "../fonts/fonts.css";
-import { margins, theme } from "../params";
+import { margins } from "../params";
 import { BulletPoints } from "../components/BulletPoints";
+import NavLogo from "../components/NavLogo";
 
 const anchorNameMap = {
   about: "about",
@@ -35,8 +35,7 @@ const NavBarContainer = () => (
         }
       `}
     >
-      <img
-        src={typemark}
+      <NavLogo
         css={css`
           height: 80px;
         `}

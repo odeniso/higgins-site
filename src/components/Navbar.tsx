@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { css } from "@emotion/react";
 import { copy, fonts, theme } from "../params";
 
-import typemark from "../images/dogsPoem-typemark.png";
+import NavLogo from "./NavLogo";
 
 const ItemContainer: React.FunctionComponent<{ alignLeft?: boolean }> = ({
   children,
@@ -71,8 +71,7 @@ const Navbar = ({
       <LinkItem href={urlMap.about}>{copy.aboutUs.title}</LinkItem>
       <LinkItem href={urlMap.product}>{copy.productInfo.title}</LinkItem>
     </ItemContainer>
-    <img
-      src={typemark}
+    <NavLogo
       css={css`
         height: 150px;
         margin: 0 80px;

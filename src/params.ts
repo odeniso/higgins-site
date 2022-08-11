@@ -93,14 +93,14 @@ const themes: Record<Theme, ThemeInfo> = {
   },
   [Theme.Conda]: {
     ...defaultTheme,
-    background: colors.fernFrond,
-    eyebrowTitleColor: colors.linen,
-    primaryColor: colors.hokeyPokey,
-    headingColor: colors.hokeyPokey,
-    logoColor: colors.hokeyPokey,
+    background: colors.linen,
+    eyebrowTitleColor: colors.cabbagePont,
+    primaryColor: colors.cabbagePont,
+    headingColor: colors.cabbagePont,
+    logoColor: colors.cabbagePont,
     name: Theme.Conda,
-    titleColor: colors.hokeyPokey,
-    textColor: colors.hokeyPokey,
+    titleColor: colors.cabbagePont,
+    textColor: colors.cabbagePont,
   },
 };
 
