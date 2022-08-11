@@ -6,7 +6,7 @@ import { margins, gutters, copy } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
-import imagePic from "../images/cow-dogs.png";
+import imagePic from "../images/great-dane-side.png";
 
 const gutterWidthLarge = gutters.minLarge;
 
