@@ -132,6 +132,9 @@ const Landing = ({
           src={HigginsPainting}
           css={css`
             max-width: 100%;
+            border: 15px solid ${theme.primaryColor};
+            border-radius: 500px;
+            box-sizing: border-box;
           `}
         />
       </div>
