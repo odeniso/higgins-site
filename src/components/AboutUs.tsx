@@ -6,7 +6,7 @@ import { margins, gutters, copy } from "../params";
 import { mediaQs } from "../mediaQueries";
 import { TinyArticle } from "./TinyArticle";
 
-import imagePic from "../images/great-dane-side.png";
+import imagePic from "../images/dogs-with-owners.png";
 
 const gutterWidthLarge = gutters.minLarge;
 
@@ -42,6 +42,9 @@ const AboutUs = ({
       <div
         css={css`
           max-width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           ${mediaQs.isMinLarge} {
             height: 100%;
           }
@@ -51,6 +54,7 @@ const AboutUs = ({
           src={imagePic}
           css={css`
             max-width: 100%;
+            height: 300px;
           `}
         />
       </div>
