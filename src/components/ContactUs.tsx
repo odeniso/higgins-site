@@ -13,7 +13,7 @@ export const ContactUs = ({
 }) => (
   <div
     css={css`
-      height: 200px;
+      min-height: 200px;
       display: flex;
       background-color: ${theme.primaryColor};
       background-size: 80%;
