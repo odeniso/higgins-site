@@ -1,8 +1,15 @@
+import { css } from "@emotion/react";
 import * as React from "react";
 
-import Icon from "../illustrations/higgins-typemark";
-import { theme } from "../params";
+import image from "../images/dogsPoem-typemark-green.png";
 
-const NavLogo = () => <Icon color={theme.logoColor} />;
+const NavLogo = () => (
+  <img
+    css={css`
+      height: 105px;
+    `}
+    src={image}
+  />
+);
 
 export default NavLogo;
