@@ -4,6 +4,9 @@ import { copy, fonts, margins, theme } from "../params";
 
 import { mediaQs } from "../mediaQueries";
 
+import  MailchimpForm from "./MailchimpForm";
+
+
 export const ContactUs = ({
   className = "",
   id = "",
@@ -14,6 +17,7 @@ export const ContactUs = ({
   <div
     css={css`
       min-height: 200px;
+      padding: 20px 0;
       display: flex;
       background-color: ${theme.primaryColor};
       background-size: 80%;
@@ -57,9 +61,17 @@ export const ContactUs = ({
             font-size: 40px;
           }
         `}
-      >
+      ><a 
+        href="https://zmartup.com/campaign/higginsfriends/"
+        target="_blank"
+        css={css` 
+          color: #fff;
+          text-decoration: none;
+        `}>
         {copy.contactUs.lead}
+      </a>
       </div>
+      <MailchimpForm />
       <div
         css={css`
           font-size: 32px;
@@ -90,9 +102,9 @@ export const ContactUs = ({
               font-size: 36px;
             }
           `}
-          href="mailto:hallo@higginsfriends.com"
+          href="mailto:office@higginsfriends.com"
         >
-          hallo@higginsfriends.com
+          office@higginsfriends.com
         </a>
       </div>
     </div>

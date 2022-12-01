@@ -78,6 +78,7 @@ const Navbar = ({
       `}
     />
     <ItemContainer>
+      <LinkItem href={urlMap.contact}>ABONNIEREN</LinkItem>
       <LinkItem href={urlMap.contact}>KONTAKT</LinkItem>
     </ItemContainer>
   </div>
