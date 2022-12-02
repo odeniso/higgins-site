@@ -11,14 +11,14 @@ const MailchimpForm: React.FunctionComponent<{}> = () => {
 
   const [email, setEmail] = React.useState('');
 
-  const [subscribed, setSub] = React.useState('');
+  const [hasSubmitted, setHasSubmitted] = React.useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     addToMailchimp(email)
       .then((data: any) => {
-        setSub('true');
+        setHasSubmitted(true);
       })
       .catch((error: Error) => {
         // Errors in here are client side
@@ -33,7 +33,6 @@ const MailchimpForm: React.FunctionComponent<{}> = () => {
   return (
     <form 
       onSubmit={handleSubmit} 
-      className={"mc-form"}
       css={css`
         margin-bottom: 30px;
       `}
@@ -45,22 +44,22 @@ const MailchimpForm: React.FunctionComponent<{}> = () => {
           type="text"
           onChange={handleEmailChange}
           css={css`
-            font-family: Myriad Pro;
+            font-family: ${fonts.sansSerif};
             display: inline-block;
             max-width: 100%;
             min-width: 300px;
             height: 40px;
             padding: 0 10px;
-            background: #fbf6ec;
+            background: ${theme.background};
             border: none;
             border-radius: 5px;
-            color:  #414C3B;
+            color: ${theme.textColor};
             font-size: 20px;
             font-weight: 400;
           `}
         />
         {
-          !subscribed
+          !hasSubmitted
           ? 
             <button 
               type="submit"
@@ -69,11 +68,11 @@ const MailchimpForm: React.FunctionComponent<{}> = () => {
                 width: 100%;
                 margin-top: 15px;
                 margin-left: 0;
-                color: #414C3B;
+                color: ${theme.textColor};
                 background: #D0AE23;
                 border: none;
                 font-size: 20px;
-                font-family: 'Myriad Pro';
+                font-family: ${fonts.sansSerif};
                 height: 40px;
                 border-radius: 5px;
                 text-transform: uppercase;
@@ -94,7 +93,7 @@ const MailchimpForm: React.FunctionComponent<{}> = () => {
                 margin-left: 10px;
               `}
             >
-            Vielen Dank</span>
+            {copy.mailchimp.thanks}</span>
         }
       </div>
     </form>
